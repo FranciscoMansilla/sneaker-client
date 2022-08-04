@@ -8,11 +8,15 @@
 .nav_title { 
   grid-column: 2 / 3;
   grid-row: 1 / 2;  
-  font-family: Xpress;
-  font-size: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+  color: var(--xpress-text-1);
+  h1{
+    font-family: Xpress;
+    font-size: 4.6rem;
+  }
 }
 .nav_icons { 
   grid-column: 3 / 4;
