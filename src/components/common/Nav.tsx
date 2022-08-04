@@ -8,7 +8,9 @@ import { Link } from 'react-router-dom'
 const Nav = ()=>{
   return(
     <div className="nav">
-      <h1 className="nav_title">Xpress</h1>
+      <Link className="nav_title" to='/'>
+        <h1>Xpress</h1>
+      </Link>
       <div className="nav_icons">
         <Link to='/new/sneaker'>
           <img src={setting} alt="" />
