@@ -1,0 +1,30 @@
+
+/*abstracts */
+@import './scss/abstracts/variables';
+@import './scss/abstracts/mixins';
+
+
+/*base */
+@import './scss/base/base';
+@import './scss/base/resets';
+
+/* settings*/
+@import  './scss/settings/breakpoints';
+@import  './scss/settings/colors';
+
+
+
+/*components*/
+@import './scss/components/Home.scss';
+@import './scss/components/Nav.scss';
+@import './scss/components/Banner.scss';
+@import './scss/components/ItemContainer.scss';
+@import './scss/components/CardItem.scss';
+@import './scss/components/Footer.scss';
+@import './scss/components/FormCreateSneaker.scss';
+@import './scss/components/CreateSneaker.scss';
+// @import './scss/components/shadow.scss';
+
+/*html{
+  overflow-x: hidden;
+}*/

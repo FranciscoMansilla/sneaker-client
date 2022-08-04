@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap');
+
+@font-face {
+  font-family: 'Xpress';
+  src: url(../../assets/fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+  font-family: 'Xpress-medium';
+  src: url(../../assets/fonts/Raleway-Medium.ttf);
+
+}
+@font-face {
+  font-family: 'Xpress-bold';
+  src: url(../../assets/fonts/Raleway-Bold.ttf);
+}
+@font-face {
+  font-family: 'Xpress-semiBold';
+  src: url(../../assets/fonts/Raleway-SemiBold.ttf);
+}
+:root{
+  /*fonts*/
+  font-family: Xpress-medium;
+
+  
+}

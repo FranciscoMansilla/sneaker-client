@@ -1,0 +1,98 @@
+.formCreateSneaker{
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formCreateSneaker_container{
+  margin-top: 5rem;
+  width: 720px;
+  div{
+    width: 100%;
+  }
+  h3{
+    font-size: 1.8rem;
+  }
+  label{
+    font-size: 1.6rem;
+    width: 180px;
+  }
+}
+.form_camp{
+  margin: 1.5rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  input{
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    width: 100%;
+  }
+  textarea{
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    width: 100%;
+    font-family: Xpress-medium;
+  }
+}
+.sizeform{
+  display: flex;
+  justify-content: space-between;
+  div{
+    width: 100%;
+  }
+}
+.addimg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h6{
+    width: 100%;
+    font-size: 1.6rem;
+    margin: .8rem 0;
+  }
+  button{
+    border: 2px solid black;
+    cursor: pointer;
+    width: 266px;
+    height: 45px;
+    font-size: 1.4rem;
+    margin: .8rem 0;
+    &:hover{
+      background-color: rgb(234, 234, 234);
+    }
+  }
+}
+.add_sneaker{
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  button{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    width: 266px;
+    height: 45px;
+    font-size: 1.4rem;
+    margin: .8rem 0;
+    &:hover{
+      background-color: rgb(72, 72, 72);
+    }
+  }
+}
+.size_camp{
+  div{
+    display: flex;
+    justify-content: space-between;
+    margin: .8rem 0;
+    input{
+      margin-right: 10rem;
+      height: 1.8rem;
+      width: 20%;
+      padding-left: 1rem;
+      font-family: Xpress-medium;
+      font-size: 1rem;
+    }
+  }
+}

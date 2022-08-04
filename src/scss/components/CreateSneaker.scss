@@ -1,0 +1,21 @@
+
+.createSneaker{
+  display: grid;
+  grid-template-columns: 1fr 1280px 1fr;
+  grid-template-rows: 170px 1fr 400px;
+  
+  // @media(max-width: 600px){
+  // grid-template-columns: 100vw;
+  //   grid-template-rows: 80px 110vh 60vh 100px;
+  // }
+}
+.createSneaker_footer{
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+.createSneaker_footer_bottom{
+  background-color: black;
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+  z-index: -10;
+}
