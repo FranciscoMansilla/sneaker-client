@@ -1,13 +1,20 @@
 import example from '../../assets/3.jpg'
+import { Link } from 'react-router-dom';
 
-const CardItem = ()=>{
+interface myProps {
+  content?: any;
+  option?: string;
+}
+const CardItem:React.FC<myProps> = (props:myProps)=>{
   return(
-    <div className='cardItem'>
-      <img src={example} alt="img" />
-      <h4>Nike Air Force 1 Mid '07 QS</h4>
-      <h5>Nike</h5>
-      <h6>$179.90</h6>
-    </div>
+    <Link className='cardItem_link' to={`/sneaker/${props.content._id}`}>
+      <div className='cardItem'>
+        <img src={props.content.img[0]} alt="img" />
+        <h4>{props.content.name}</h4>
+        <h5>{props.content.brand}</h5>
+        <h6>{'$'+props.content.price}</h6>
+      </div>
+    </Link>
   )
 }
 export default CardItem
