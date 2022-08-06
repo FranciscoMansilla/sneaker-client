@@ -1,28 +1,39 @@
+import axios from "axios"
 import { Dispatch } from "react"
 import { Actions , ActionType } from "./types"
 
+const api = 'http://localhost:3001/api'
 
-export const changeColorPrimary = (color:string)=>{
+export const AddSneaker = (data:any)=>{
   return(dispatch: Dispatch<Actions>)=>{
-    dispatch({
-      type: ActionType.CHANGE_COLOR_PRIMARY,
-      payload: color
-    })
+    axios.post(`${api}/sneaker/`,data)
+    .then(response => 
+      dispatch({
+        type: ActionType.ADD_SNEAKER,
+        payload: response.data,
+      })
+    );
   }
 }
-export const changeColorSecondary = (color:string)=>{
+export const GetSneakers = ()=>{
   return(dispatch: Dispatch<Actions>)=>{
-    dispatch({
-      type: ActionType.CHANGE_COLOR_SECONDARY,
-      payload: color
-    })
+    axios.get(`${api}/sneaker/`)
+    .then(response => 
+      dispatch({
+        type: ActionType.GET_SNEAKERS,
+        payload: response.data,
+      })
+    );
   }
 }
-export const changeColorTertiary = (color:string)=>{
+export const GetSneakerDetail = (id:any)=>{
   return(dispatch: Dispatch<Actions>)=>{
-    dispatch({
-      type: ActionType.CHANGE_COLOR_TERTIARY,
-      payload: color
-    })
+    axios.get(`${api}/sneaker/${id}`)
+    .then(response => 
+      dispatch({
+        type: ActionType.GET_SNEAKER_DETAIL,
+        payload: response.data,
+      })
+    );
   }
 }

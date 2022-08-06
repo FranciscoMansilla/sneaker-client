@@ -1,23 +1,26 @@
+
+
 export type Actions =
-  | ChangeColorPrimary
-  | ChangeColorSecondary
-  | ChangeColorTertiary
+  | AddSneaker
+  | GetSneakers
+  | GetSneakerDetail
 
 export enum ActionType {
-  CHANGE_COLOR_PRIMARY = "CHANGE_COLOR_PRIMARY",
-  CHANGE_COLOR_SECONDARY = "CHANGE_COLOR_SECONDARY",
-  CHANGE_COLOR_TERTIARY = "CHANGE_COLOR_TERTIARY"
+  ADD_SNEAKER = 'ADD_SNEAKER',
+  GET_SNEAKERS = 'GET_SNEAKERS',
+  GET_SNEAKER_DETAIL = 'GET_SNEAKER_DETAIL',
 }
 
-export interface ChangeColorPrimary{
-  type: ActionType.CHANGE_COLOR_PRIMARY
-  payload?: string 
+
+export interface AddSneaker{
+  type: ActionType.ADD_SNEAKER
+  payload?: any 
 }
-export interface ChangeColorSecondary{
-  type: ActionType.CHANGE_COLOR_SECONDARY
-  payload?: string 
+export interface GetSneakers{
+  type: ActionType.GET_SNEAKERS
+  payload?: any 
 }
-export interface ChangeColorTertiary{
-  type: ActionType.CHANGE_COLOR_TERTIARY
-  payload?: string 
+export interface GetSneakerDetail{
+  type: ActionType.GET_SNEAKER_DETAIL
+  payload?: any 
 }

@@ -1,34 +1,34 @@
 import { ActionType } from "../actions/types"
 
 interface State{
-  colorPrimary:string,
-  colorSecondary:string,
-  colorTertiary:string,
+  response_AddSneaker:object,
+  allSneakers: [],
+  sneakerDetail: object
 }
 
 const initialState : State = {
-  colorPrimary: '#dbe4ff',
-  colorSecondary:'#4a88d9',
-  colorTertiary: '#ffffff',
+  response_AddSneaker:{},
+  allSneakers:[],
+  sneakerDetail: {}
 }
 
 const reducer = (state: any = initialState, action: any) => {
   switch (action.type) {
-    case ActionType.CHANGE_COLOR_PRIMARY:
+    case ActionType.ADD_SNEAKER:
       return{
         ...state,
-        colorPrimary: action.payload
+        response_AddSneaker:action.payload
       }
-    case ActionType.CHANGE_COLOR_SECONDARY:
+    case ActionType.GET_SNEAKERS:
       return{
         ...state,
-        colorSecondary: action.payload
+        allSneakers:action.payload.sneakers
       }
-    case ActionType.CHANGE_COLOR_TERTIARY:
+    case ActionType.GET_SNEAKER_DETAIL:
       return{
         ...state,
-        colorTertiary: action.payload
-      }    
+        sneakerDetail:action.payload.sneaker
+      }
     default:
       return state
   }
