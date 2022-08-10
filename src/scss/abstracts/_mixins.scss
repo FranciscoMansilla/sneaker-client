@@ -1,0 +1,22 @@
+
+
+
+@mixin xpress_button($bg:#F5F5F5,$bgHover:brightness(1.2),$width:290px, $height:65px ) {
+  width: $width;
+  height: $height;
+  border: 2px solid black;
+  font-size: 1.7rem;
+  background-color: $bg;
+  @if $bg == #000000{
+    color: white;
+  }
+  &:hover{
+    @if $bgHover == "brightness(1.2)" {
+      filter: $bgHover;
+    }
+    @if $bgHover != "brightness(1.2)" {
+      background-color: $bgHover;
+    }
+    cursor: pointer;
+  }
+} 
