@@ -1,0 +1,20 @@
+.m_option{
+  display: grid;
+  grid-template-columns: 1fr 1280px 1fr ;
+  grid-template-rows: 170px 1fr 400px;
+  background-color: var(--xpress-background-M);
+}
+.w_option{
+  display: grid;
+  grid-template-columns: 1fr 1280px 1fr ;
+  grid-template-rows: 170px 1fr 400px;
+  background-color: var(--xpress-background-W);
+}
+.row3{
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+.row2{
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
