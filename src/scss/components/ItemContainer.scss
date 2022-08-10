@@ -32,16 +32,8 @@
     font-size: 20px;
   }
   button{
+    @include xpress_button();
     margin-top: 2rem;
-    width: 290px;
-    height: 65px;
-    border: 2px solid black;
-    font-size: 1.7rem;
-    background-color: #F5F5F5;
-    &:hover{
-      filter: brightness(1.2);
-      cursor: pointer;
-    }
   }
 }
 .itemContainer2{
@@ -59,16 +51,8 @@
     font-size: 20px;
   }
   button{
+    @include xpress_button();
     margin-top: 2rem;
-    width: 290px;
-    height: 65px;
-    border: 2px solid black;
-    font-size: 1.7rem;
-    background-color: #F5F5F5;
-    &:hover{
-      filter: brightness(1.2);
-      cursor: pointer;
-    }
   }
 }
 .cardContainer{
@@ -76,4 +60,5 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
