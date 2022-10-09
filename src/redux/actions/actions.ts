@@ -15,9 +15,20 @@ export const AddSneaker = (data:any)=>{
     );
   }
 }
-export const GetSneakers = ()=>{
+export const GetAllSneakers = ()=>{
   return(dispatch: Dispatch<Actions>)=>{
     axios.get(`${api}/sneaker/`)
+    .then(response => 
+      dispatch({
+        type: ActionType.GET_SNEAKERS,
+        payload: response.data,
+      })
+    );
+  }
+}
+export const GetSneakers = (genre: String, page: String | undefined, filter?:Object )=>{
+  return(dispatch: Dispatch<Actions>)=>{
+    axios.get(`${api}/sneaker/${genre}/${page}`, filter)
     .then(response => 
       dispatch({
         type: ActionType.GET_SNEAKERS,
