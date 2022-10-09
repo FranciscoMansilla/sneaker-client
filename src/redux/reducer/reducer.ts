@@ -22,7 +22,7 @@ const reducer = (state: any = initialState, action: any) => {
     case ActionType.GET_SNEAKERS:
       return{
         ...state,
-        allSneakers:action.payload.sneakers
+        allSneakers:action.payload
       }
     case ActionType.GET_SNEAKER_DETAIL:
       return{

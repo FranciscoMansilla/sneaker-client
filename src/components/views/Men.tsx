@@ -6,22 +6,24 @@ import { useDispatch, useSelector } from "react-redux";
 import { bindActionCreators } from "redux";
 import * as actionCreator from '../../redux/actions/actions';
 import { useEffect } from "react";
+import { useParams } from 'react-router';
 
 interface myProps {
   content?: any;
-  option?: string;
+  option: string;
 }
 const Men:React.FC<myProps> = (props:myProps)=>{
-  const { GetSneakers } = bindActionCreators(actionCreator, useDispatch());
+  const { GetAllSneakers, GetSneakers } = bindActionCreators(actionCreator, useDispatch());
   const allSneakers = useSelector((state: any) => state.allSneakers);
+  const page = useParams().page
   useEffect(()=>{
-    GetSneakers()
-  },[])
+    GetSneakers(props.option, page)
+  },[props.option, page])
   return(
     <div className={`${props.option}_option`}>
       <Nav/>
       <div className='row2'>
-        <Paginated content={[...allSneakers, ...allSneakers]}/>
+        <Paginated content={allSneakers}/>
       </div>
       <div className='createSneaker_footer_bottom'></div>
       <div className='row3'>

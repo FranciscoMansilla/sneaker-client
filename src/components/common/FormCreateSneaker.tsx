@@ -21,9 +21,9 @@ const FormCreateSneaker = ()=>{
   })
   const [form, setForm] = useState({
     name: '',
-    genre: '',
+    genre: 'Men',
     price: 0,
-    description:'',
+    description:'Due to trademark regulations we are not allowed to ship this product outside the EMEA zone. Thank you for your understanding.',
     brand: '',
     //img: [],
     //stock: {},
@@ -59,7 +59,12 @@ const FormCreateSneaker = ()=>{
           </div>
           <div className="form_camp">
             <label>Genre</label>
-            <input type="text" value={form.genre} onChange={(e)=>setForm({...form, genre:e.target.value})}/>
+            <select onChange={(e)=>setForm({...form, genre:e.target.value})}>
+              <option value="Men">Men</option>
+              <option value="Women">Women</option>
+            </select>
+
+            {/* <input type="text" value={form.genre} onChange={(e)=>setForm({...form, genre:e.target.value})}/> */}
           </div>
           <div className="form_camp">
             <label>Brand</label>

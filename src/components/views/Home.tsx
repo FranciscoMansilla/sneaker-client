@@ -9,21 +9,21 @@ import * as actionCreator from '../../redux/actions/actions';
 import { useEffect } from "react";
 
 const Home = ()=>{
-  const { GetSneakers } = bindActionCreators(actionCreator, useDispatch());
+  const { GetAllSneakers } = bindActionCreators(actionCreator, useDispatch());
   const allSneakers = useSelector((state: any) => state.allSneakers);
   useEffect(()=>{
-    GetSneakers()
+    GetAllSneakers()
   },[])
   return(
     <div className="home" >
       <Nav/>
       <Banner/>
-      <ItemContainer content={allSneakers} option={''}/>
+      <ItemContainer content={allSneakers.sneakers} option={''}/>
       <div className="men"></div>
       <div className="women"></div>
       <div className="footer_bottom"></div>
-      <ItemContainer content={allSneakers} option={'1'}/>
-      <ItemContainer content={allSneakers} option={'2'}/>
+      <ItemContainer content={allSneakers.sneakers} option={'1'}/>
+      <ItemContainer content={allSneakers.sneakers} option={'2'}/>
       <div className="home_footer">
         <Footer option={true}/>
       </div>

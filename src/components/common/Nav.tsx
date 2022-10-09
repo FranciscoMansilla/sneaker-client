@@ -22,10 +22,10 @@ const Nav = ()=>{
         <input type="text" name="" id="" placeholder="Search" />
       </div>
       <div className="nav_option">
-        <Link to='/men'>
+        <Link to='/men/1'>
           <h6>Men</h6>
         </Link>
-        <Link to='/women'>
+        <Link to='/women/1'>
           <h6>Women</h6>
         </Link>
         <Link to='/brands'>

@@ -1,6 +1,7 @@
 .cardItem{
   color: var(--xpress-text-1);
-
+  margin: 1rem .8rem;
+  width: 290px;
   h4{
     font-size: 1rem;
     margin: 1rem 0 0 .3rem;
@@ -18,6 +19,9 @@
   img{
     width: 288px;
     height: 288px;
+  }
+  &:hover{
+    text-decoration: underline;
   }
 }
 .cardItem_link{
