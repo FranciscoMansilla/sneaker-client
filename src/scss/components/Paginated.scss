@@ -1,0 +1,18 @@
+
+.paginated{
+  margin: 4rem 0;
+}
+.paginatedButtonContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.paginatedButton{
+  @include xpress_button($width: 35px, $height:35px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  margin: 0 .2rem;
+}
