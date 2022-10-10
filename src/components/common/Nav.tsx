@@ -15,7 +15,9 @@ const Nav = ()=>{
         <Link to='/new/sneaker'>
           <img src={setting} alt="" />
         </Link>
-        <img src={user} alt="" />
+        <Link to='login'>
+          <img src={user} alt="" />
+        </Link>
         <img src={carrito} alt="" />
       </div>
       <div className="nav_serchbox">

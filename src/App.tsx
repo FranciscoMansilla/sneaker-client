@@ -3,6 +3,8 @@ import CreateSneaker from "./components/views/CreateSneaker";
 import Home from './components/views/Home';
 import Sneaker from './components/views/Sneaker';
 import Men from './components/views/Men';
+import Login from "./components/views/Login";
+import Register from './components/views/Register';
 
 function App() {
   return (
@@ -13,7 +15,8 @@ function App() {
         <Route path="/sneaker/:id" element={<Sneaker/>} />
         <Route path="/men/:page" element={<Men option="men"/>} />
         <Route path="/women/:page" element={<Men option="women"/>} />
-
+        <Route path="/login" element={<Login/>} />
+        <Route path="/register" element={<Register/>} />
       </Routes>
     </div>
   );
