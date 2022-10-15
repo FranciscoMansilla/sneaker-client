@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import BrandLogo from '../common/BrandLogo';
 
 const Register = () => {
   const [email, setEmail] = useState('')
@@ -33,9 +34,12 @@ const Register = () => {
         </form>
       </div>
       <div className='column_2'>
-
+        <BrandLogo/>
       </div>
-      <div className='footer_login'></div>
+      <div className='footer_login1'>
+        <div>© Copyright 2022 by FranciscoMansilla</div>
+      </div>
+      <div className='footer_login2'></div>
     </div>
   )
 }

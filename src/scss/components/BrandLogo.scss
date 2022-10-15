@@ -1,0 +1,23 @@
+.brand_logo_container{
+  color: black;
+  font-family: 'Xpress';
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logobrandchild{
+  font-size: 10rem;
+  width: 265px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.divBrand1{
+  margin: 0 0 -35px 0;
+}
+.divBrand2{
+  margin: -35px 0;
+}
